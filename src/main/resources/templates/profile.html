@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+    <link rel="stylesheet" href="../static/style/main.css">
+</head>
+<body>
+<div class="wrapper">
+    <div class="menu">
+        <div id="userProfile" class="menu-item profile menu-active"><a th:href="@{/user/}">Profile</a></div>
+        <div class="menu-item top"><a th:href="@{/top}">Top 10</a></div>
+        <div class="menu-item flop"><a th:href="@{/flop}">Flop 10</a></div>
+        <div class="menu-item last"><a th:href="@{/last}">Last</a></div>
+    </div>
+    <div class="content">
+        <div class="main">
+            <div id="randomQuote" class="random-quote">
+                <h5>Random quote</h5>
+            </div>
+            <div id="userQuotes" class="quotes">
+                <h5> quotes</h5>
+                <a id="addQuoteButton" class="add-button" th:href="@{/quotes/add}">Add</a>
+            </div>
+        </div>
+        <div id="userInfo" class="user-info">
+            <h6>Hello name!</h6>
+            <button id="logoutButton" class="logout-button" type="button">Logout</button>
+            <div class="last-votes">
+                <h6>Last votes (5)</h6>
+
+            </div>
+        </div>
+        <div id="loginBlock" class="login">
+            <form id="authForm" class="auth">
+                <input type="text" id="authEmail" class="auth-item" placeholder="Email"><br>
+                <input type="password" id="authPassword" class="auth-item"  placeholder="Password"><br>
+                <button type="submit" class="auth-item auth-button" >Sign in</button><br>
+                <a class="auth-item auth-link" th:href="@{/users/new}">Create an account !</a>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="../static/js/main.js" type="text/javascript"></script>
+</body>
+</html>

@@ -1,0 +1,164 @@
+html {
+    font-family: Arial, sans-serif;
+}
+
+h5 {
+    font-size: 24px;
+    margin: 0 0 20px;
+    display: inline-block;
+}
+
+h6 {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0 0 10px;
+}
+
+h7 {
+    margin-top: 2px;
+}
+
+button {
+    cursor: pointer;
+}
+
+.wrapper {
+    padding: 50px 0;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu {
+    border: 0.5px solid black;
+    display: flex;
+}
+
+.menu-item {
+    border: inherit;
+    font-size: 20px;
+}
+
+.menu-item a {
+    display: block;
+    padding: 15px 20px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000000;
+}
+
+.menu-item a:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.menu-active a {
+    background: blanchedalmond;
+    cursor: default;
+}
+
+.menu-active a:hover {
+    box-shadow: none;
+}
+
+.content {
+    display: flex;
+    margin: 20px 0;
+    justify-content: space-between;
+}
+
+.main {
+    width: 70%;
+}
+
+.item {
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.link-to-profile {
+    float: right;
+    color: #000000;
+}
+
+.random-quote {
+    margin-bottom: 40px;
+}
+
+.add-button {
+    float: right;
+    margin-top: 10px;
+}
+
+.user-info {
+    border: 1px solid black;
+    padding: 10px;
+    width: 20%;
+    height: fit-content;
+}
+
+.user-info h6 {
+    display: inline-block;
+    margin-top: 2px;
+}
+
+.last-votes {
+    border: 1px solid black;
+    padding: 10px;
+    margin-top: 10%;
+}
+
+.logout-button {
+    float: right;
+}
+
+.login {
+    border: 1px solid black;
+    padding: 25px 0;
+    display: flex;
+    width: 20%;
+    height: fit-content;
+    justify-content: space-evenly;
+}
+
+.auth-item {
+    margin-bottom: 10px;
+}
+
+.auth-button {
+    float: right;
+}
+
+.auth-link {
+    font-size: 14px;
+    margin: 20px auto 0;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: #000000;
+}
+
+.auth-link :hover {
+    text-decoration: underline;
+}
+
+.last-votes h6 {
+    margin-bottom: 20px;
+}
+
+.my-vote h6 {
+    margin-bottom: 10px;
+}
+
+.update-button {
+    position: absolute;
+    top: 8px;
+    right: 65px;
+}
+
+.delete-button {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+}
